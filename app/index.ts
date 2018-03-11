@@ -7,13 +7,6 @@ declare var cytoscape: any;
       .then(render);
   }
 
-  document.getElementById('report-btn').addEventListener('click', () => {
-    const input = document.getElementById('report-input') as HTMLInputElement;
-    const id = input.value;
-    input.value = '';
-    processReport(id);
-  });
-
   function normalizeElements(graph: any) {
     const calculateNodeStrength = (graph: any, n: string) => {
       let sum = 0;

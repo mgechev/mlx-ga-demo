@@ -14,12 +14,6 @@ var __values = (this && this.__values) || function (o) {
             .then(function (r) { return r.json(); })
             .then(render);
     }
-    document.getElementById('report-btn').addEventListener('click', function () {
-        var input = document.getElementById('report-input');
-        var id = input.value;
-        input.value = '';
-        processReport(id);
-    });
     function normalizeElements(graph) {
         var calculateNodeStrength = function (graph, n) {
             var sum = 0;

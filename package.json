@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsc -p tsconfig.app.json && ts-node server.ts report -p 3001"
+    "start": "tsc -p tsconfig.app.json && ts-node app/server.ts report -p 3001"
   },
   "author": "",
   "license": "ISC",

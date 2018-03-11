@@ -1,0 +1,23 @@
+{
+  "name": "ga",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc -p tsconfig.app.json && ts-node server.ts report -p 3001"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mlx/ga": "0.0.5",
+    "@mlx/parser": "0.0.5",
+    "cytoscape": "^3.2.9",
+    "express": "^4.16.2",
+    "meow": "^4.0.0",
+    "ts-node": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.11.1",
+    "@types/meow": "^4.0.1"
+  }
+}

@@ -22,3 +22,4 @@ fetch(
 ).then(g => {
   writeFileSync('data.json', JSON.stringify(g, null, 2));
 });
+

@@ -127,11 +127,11 @@ var __values =
         .selector('node')
         .style({
           width: function(n) {
-            return n.data().width;
+            return n.data().width / 2;
           },
           'background-color': function(n) {
-            const w = n.data().width;
-            if (w > 180) {
+            const w = n.data().width / 2;
+            if (w > 90) {
               return '#F5AB35';
             } else if (w > 40) {
               return '#ED8F3B';
@@ -141,7 +141,7 @@ var __values =
         })
         .style({
           height: function(n) {
-            return n.data().width;
+            return n.data().width / 2;
           },
           label: function(n) {
             return n.data().name;

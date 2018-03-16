@@ -87,20 +87,43 @@ declare var cytoscape: any;
         .style({
           width(n: any) {
             return n.data().weight;
+          },
+          'line-color'(n: any) {
+            const w = n.data().weight;
+            console.log(w);
+            if (w > 19) {
+              return '#F5AB35';
+            } else if (w > 10) {
+              return '#ED8F3B';
+            }
+            return '#D46455';
           }
         })
         .selector('node')
         .style({
           width(n: any) {
-            return n.data().width;
-          }
-        })
-        .style({
+            return n.data().width / 2;
+          },
+          'background-color'(n: any) {
+            const w = n.data().width / 2;
+            if (w > 90) {
+              return '#F5AB35';
+            } else if (w > 40) {
+              return '#ED8F3B';
+            }
+            return '#D46455';
+          },
           height(n: any) {
-            return n.data().width;
+            return n.data().width / 2;
           },
           label(n: any) {
             return n.data().name;
+          },
+          color() {
+            return '#ccc';
+          },
+          'font-size'() {
+            return 35;
           }
         }),
 

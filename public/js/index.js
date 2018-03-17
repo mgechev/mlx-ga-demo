@@ -101,7 +101,6 @@ var __values = (this && this.__values) || function (o) {
                 },
                 'line-color': function (n) {
                     var w = n.data().weight;
-                    console.log(w);
                     if (w > 19) {
                         return '#F5AB35';
                     }

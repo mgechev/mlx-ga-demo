@@ -9,8 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@mlx/ga": "^0.0.16",
-    "@mlx/parser": "^0.0.16",
+    "@mlx/ga": "^0.0.17",
+    "@mlx/parser": "^0.0.17",
     "cytoscape": "^3.2.9",
     "express": "^4.16.2",
     "meow": "^4.0.0",

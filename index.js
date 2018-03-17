@@ -10,16 +10,16 @@ const applicationRoutes = parseRoutes(
   ProjectType.Angular
 );
 
-fetch(
+fetch({
   key,
   viewId,
-  {
+  period: {
     startDate: new Date('2016-1-1'),
     endDate: new Date('2018-2-24')
   },
-  r => r.replace('/app', ''),
-  applicationRoutes.map(f => f.path)
-).then(g => {
+  formatter: r => r.replace('/app', ''),
+  routeDeclarations: applicationRoutes.map(f => f.path)
+}).then(g => {
   writeFileSync('data.json', JSON.stringify(g, null, 2));
 });
 

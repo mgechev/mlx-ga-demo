@@ -90,7 +90,6 @@ declare var cytoscape: any;
           },
           'line-color'(n: any) {
             const w = n.data().weight;
-            console.log(w);
             if (w > 19) {
               return '#F5AB35';
             } else if (w > 10) {
